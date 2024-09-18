@@ -1,0 +1,16 @@
+src
+test
+coverage
+docs
+tsconfig.json
+tslint.json
+.prettierrc
+.releaserc
+.nvmrc
+.idea
+.vscode
+.github
+.eslintrc.js
+wallaby.js
+jest.config.js
+prettier.config.js
