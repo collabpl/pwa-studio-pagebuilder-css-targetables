@@ -1,6 +1,6 @@
 {
-  "name": "@collab/pwa-studio-pagebuilder-css-targetables",
-  "description": "Simplify creating maintainable PWAStudio Projects",
+  "name": "@collabpl/pwa-studio-pagebuilder-css-targetables",
+  "description": "Simplifies the process of styling PageBuilder components in PWA Studio",
   "version": "0.0.1",
   "author": "Marcin Jędrzejewski <m.jedrzejewski@collab.pl>",
   "homepage": "https://github.com/collabpl/pwa-studio-pagebuilder-css-targetables",
@@ -11,42 +11,31 @@
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
   "scripts": {
-    "prepublish": "tsc",
-    "format": "prettier --fix",
+    "build": "tsc",
+    "format": "prettier",
     "lint": "eslint src/**",
-    "lint-and-fix": "eslint  src/** --fix",
-    "test": "jest",
-    "test:coverage": "jest --coverage",
-    "prepare": "husky install"
+    "lint-and-fix": "eslint  src/** --fix"
   },
   "dependencies": {
-    "globby": "^11.0.0"
+    "globby": "^14.0.2"
   },
   "engines": {
     "node": ">=18"
   },
   "devDependencies": {
-    "@tsconfig/node12": "^1.0.9",
-    "@types/jest": "^27.0.2",
-    "@types/node": "17.0.0",
-    "@typescript-eslint/eslint-plugin": "^5.7.0",
-    "@typescript-eslint/parser": "^5.7.0",
-    "coveralls": "^3.1.1",
-    "eslint": "8.4.1",
-    "eslint-config-airbnb-base": "15.0.0",
-    "eslint-config-airbnb-typescript": "^16.1.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.24.1",
-    "eslint-plugin-jest": "25.3.0",
-    "eslint-plugin-prettier": "4.0.0",
+    "@magento/eslint-config": "^1.5.3",
+    "@tsconfig/node18": "^18.2.4",
+    "@types/node": "^22.5.5",
+    "@typescript-eslint/eslint-plugin": "^8.6.0",
+    "@typescript-eslint/parser": "^8.6.0",
+    "eslint": "9.10.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-package-json": "^0.1.4",
     "install-peers": "^1.0.3",
-    "jest": "^27.2.5",
-    "prettier": "^2.3.2",
-    "prettier-eslint": "^8.2.2",
-    "ts-jest": "^27.0.5",
-    "typedoc": "^0.22.11",
-    "typedoc-plugin-markdown": "^3.11.12",
-    "typescript": "^4.3.5"
+    "prettier-eslint": "^16.3.0",
+    "typedoc": "^0.26.7",
+    "typescript": "^5.5.4"
   },
   "keywords": [
     "Magento 2",

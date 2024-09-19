@@ -1,6 +1,6 @@
-const path = require('path');
-const globby = require('globby');
-const { stat: fsStat } = require('fs/promises');
+import {stat as fsStat} from "fs/promises";
+import path from "path";
+import {globby} from "globby";
 
 enum LogLevel {
   'none' = -1,
@@ -97,7 +97,7 @@ class ExtendPagebuilderCssIntercept {
         } catch (error) {
           this.log(
             LogLevel.warn,
-            'File not exits in core',
+            'File not exits in core: ' + error,
             absolutePath,
           );
         }
@@ -146,14 +146,14 @@ class ExtendPagebuilderCssIntercept {
 
   private log(level: LogLevel, message: string, ...args: any[]) {
     if (this.logLevel >= level) {
-      // eslint-disable-next-line default-case
+
       switch (level) {
         case LogLevel.warn:
-          // eslint-disable-next-line no-console
+
           console.warn(message, args);
           break;
         case LogLevel.debug:
-          // eslint-disable-next-line no-console
+
           console.debug(message, args);
           break;
       }
@@ -161,6 +161,6 @@ class ExtendPagebuilderCssIntercept {
   }
 }
 
-// eslint-disable-next-line import/prefer-default-export
+
 export { LogLevel, ExtendPagebuilderCssIntercept };
 module.exports.ExtendPagebuilderCssIntercept = ExtendPagebuilderCssIntercept;
