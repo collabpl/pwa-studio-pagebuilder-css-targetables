@@ -10,6 +10,7 @@
         "declaration": true,
         "sourceMap": true,
         "outDir": "dist/src",
+        "types": [],
         "baseUrl": ".",
         "paths": {
             "*": [
@@ -18,7 +19,6 @@
         }
     },
     "include": [
-        "src/**/*",
-        "test/**/*"
+        "src/**/*"
     ]
 }

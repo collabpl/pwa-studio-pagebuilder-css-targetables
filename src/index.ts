@@ -1,6 +1,6 @@
 import {stat as fsStat} from "fs/promises";
 import path from "path";
-import {globby} from "globby";
+import globby = require("globby");
 
 enum LogLevel {
   'none' = -1,

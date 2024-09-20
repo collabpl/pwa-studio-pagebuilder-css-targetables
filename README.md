@@ -8,7 +8,7 @@ merged with component's `defaultClasses` .
 
 Yours `local-intercept.js`
 ```javascript
-const { ExtendPagebuilderCssIntercept } = require('@collab/pwa-studio-pagebuilder-css-targetables');
+const { ExtendPagebuilderCssIntercept } = require('@collabpl/pwa-studio-pagebuilder-css-targetables');
 const { Targetables } = require('@magento/pwa-buildpack');
 
 module.exports = targets => {

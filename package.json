@@ -1,7 +1,7 @@
 {
   "name": "@collabpl/pwa-studio-pagebuilder-css-targetables",
   "description": "Simplifies the process of styling PageBuilder components in PWA Studio",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Marcin Jędrzejewski <m.jedrzejewski@collab.pl>",
   "homepage": "https://github.com/collabpl/pwa-studio-pagebuilder-css-targetables",
   "bugs": {
@@ -17,7 +17,7 @@
     "lint-and-fix": "eslint  src/** --fix"
   },
   "dependencies": {
-    "globby": "^14.0.2"
+    "globby": "^11.0.0"
   },
   "engines": {
     "node": ">=18"
